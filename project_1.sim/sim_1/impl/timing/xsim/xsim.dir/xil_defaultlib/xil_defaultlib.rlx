@@ -1,0 +1,21 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+C:/Users/raula/Desktop/project_1/project_1.sim/sim_1/impl/timing/xsim/TB_IEEE754_Adder_time_impl.v,1725875956,verilog,,,,IEEE754_Adder;flipflopD;flipflopD_2;flipflopD_3;flipflopD_4;flipflopD_5;flipflopD_6;flipflopD_vector;flipflopD_vector_0;flipflopD_vector_7;flipflopD_vector__parameterized2;flipflopD_vector__parameterized2_1;flipflopD_vector__parameterized4;flipflopD_vector__parameterized4_8;flipflopD_vector__parameterized6;glbl,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_IEEE754_Adder.vhd,1725823674,vhdl,,,,tb_ieee754_adder,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_barrel_shifter.vhd,1722184592,vhdl,,,,tb_barrel_shifter,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_barrel_shifter_left.vhd,1722187412,vhdl,,,,tb_barrel_shifter_left,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_exp_diff.vhd,1722086944,vhdl,,,,tb_exp_diff,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_order_numbers.vhd,1722110671,vhdl,,,,tb_order_numbers,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_rounder.vhd,1722270814,vhdl,,,,tb_rounder,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_special_case_check.vhd,1722162918,vhdl,,,,tb_special_case_check,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_stage1.vhd,1722195988,vhdl,,,,tb_stage1,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_stage2.vhd,1722258882,vhdl,,,,tb_stage2,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_stage3.vhd,1722280857,vhdl,,,,tb_stage3,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sim_1/new/TB_sum_adapter.vhd,1722191050,vhdl,,,,tb_sum_adapter,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd,1722037214,vhdl,,,,fa,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd,1722036703,vhdl,,,,rca_n,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd,1722084411,vhdl,,,,exp_diff,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/special_case_check.vhd,1722162725,vhdl,,,,special_case_check,,,,,,,,
+C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd,1722297069,vhdl,,,,two_complement,,,,,,,,
