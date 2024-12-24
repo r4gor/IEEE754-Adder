@@ -1,0 +1,7 @@
+Running: xsim.dir/TB_special_case_check_time_impl/xsimk.exe -simmode gui -wdb TB_special_case_check_time_impl.wdb -simrunnum 0 -socket 50159
+Design successfully loaded
+Design Loading Memory Usage: 9012 KB (Peak: 9012 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 9632 KB (Peak: 9632 KB)
+Simulation CPU Usage: 31 ms

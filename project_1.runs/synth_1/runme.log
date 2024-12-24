@@ -1,0 +1,423 @@
+
+*** Running vivado
+    with args -log IEEE754_Adder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source IEEE754_Adder.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Sep  9 11:09:05 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source IEEE754_Adder.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 518.508 ; gain = 200.203
+Command: read_checkpoint -auto_incremental -incremental C:/Users/raula/Desktop/project_1/project_1.srcs/utils_1/imports/synth_1/FA.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/raula/Desktop/project_1/project_1.srcs/utils_1/imports/synth_1/FA.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top IEEE754_Adder -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Device 21-9227] Part: xc7k70tfbv676-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17248
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1373.410 ; gain = 449.262
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 't' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:47]
+WARNING: [Synth 8-9112] actual for formal port 'data_in' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/rounder.vhd:56]
+WARNING: [Synth 8-9112] actual for formal port 'l' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:84]
+WARNING: [Synth 8-9112] actual for formal port 't' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:94]
+WARNING: [Synth 8-9112] actual for formal port 'g' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:102]
+WARNING: [Synth 8-9112] actual for formal port 'data_in' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:117]
+WARNING: [Synth 8-9112] actual for formal port 'l' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:133]
+WARNING: [Synth 8-9112] actual for formal port 'data_in' is neither a static name nor a globally static expression [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'IEEE754_Adder' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:16]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'X_in_s1_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflopD_vector' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'Y_in_s1_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:120]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'OP_in_s1_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'flipflopD' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:15]
+INFO: [Synth 8-3491] module 'stage1' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:5' bound to instance 's1' of component 'stage1' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'stage1' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:18]
+INFO: [Synth 8-3491] module 'order_numbers' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/order_numbers.vhd:4' bound to instance 'order_device' of component 'order_numbers' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'order_numbers' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/order_numbers.vhd:17]
+INFO: [Synth 8-3491] module 'exp_diff' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:6' bound to instance 'exp_diff_component' of component 'exp_diff' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/order_numbers.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'exp_diff' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:15]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'complement' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:11]
+	Parameter N bound to: 9 - type: integer 
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'complement' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U0' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'FA' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:15]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'RCA_N' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'two_complement' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:11]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'exp_diff' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'exp_diff' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/exp_diff.vhd:15]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'complement' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/order_numbers.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'order_numbers' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/order_numbers.vhd:17]
+INFO: [Synth 8-3491] module 'special_case_check' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/special_case_check.vhd:5' bound to instance 'special_case_device' of component 'special_case_check' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'special_case_check' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/special_case_check.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'special_case_check' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/special_case_check.vhd:14]
+INFO: [Synth 8-3491] module 'sum_adapter' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:5' bound to instance 'sum_adapter_device' of component 'sum_adapter' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'sum_adapter' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:16]
+INFO: [Synth 8-3491] module 'barrel_shifter_right' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_right.vhd:4' bound to instance 'shift_L' of component 'barrel_shifter_right' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'barrel_shifter_right' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_right.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'barrel_shifter_right' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_right.vhd:12]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'complement_L' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'two_complement__parameterized2' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:11]
+	Parameter N bound to: 29 - type: integer 
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'complement' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'RCA_N__parameterized2' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U0' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:30]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'RCA_N__parameterized2' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'two_complement__parameterized2' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:11]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'complement_G' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'sum_adapter' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/sum_adapter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'stage1' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage1.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'exp_in_s2_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'flipflopD_vector__parameterized2' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflopD_vector__parameterized2' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'significand_G_in_s2_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'flipflopD_vector__parameterized4' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflopD_vector__parameterized4' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'significand_L_in_s2_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:147]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'is_NaN_in_s2_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:151]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'is_Inf_in_s2_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:154]
+INFO: [Synth 8-3491] module 'stage2' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:4' bound to instance 's2' of component 'stage2' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'stage2' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:19]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'significand_adder' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:59]
+	Parameter N bound to: 29 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'complementer' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:70]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'exp_adder' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'RCA_N__parameterized4' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U0' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:30]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'RCA_N__parameterized4' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+INFO: [Synth 8-3491] module 'barrel_shifter_right' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_right.vhd:4' bound to instance 'shifter' of component 'barrel_shifter_right' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:92]
+INFO: [Synth 8-256] done synthesizing module 'stage2' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage2.vhd:19]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'in_s3_result_sign_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:171]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'in_s3_exp_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:174]
+	Parameter N bound to: 27 - type: integer 
+INFO: [Synth 8-3491] module 'flipflopD_vector' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:4' bound to instance 'in_s3_result_significand_ffD' of component 'flipflopD_vector' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'flipflopD_vector__parameterized6' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+	Parameter N bound to: 27 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flipflopD_vector__parameterized6' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD_vector.vhd:18]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'in_s3_is_NaN_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:182]
+INFO: [Synth 8-3491] module 'flipflopD' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/flipflopD.vhd:4' bound to instance 'in_s3_is_Inf_ffD' of component 'flipflopD' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:185]
+INFO: [Synth 8-3491] module 'stage3' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:4' bound to instance 's3' of component 'stage3' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'stage3' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:15]
+INFO: [Synth 8-3491] module 'LZC' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/LZC.vhd:4' bound to instance 'zero_counter' of component 'LZC' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'LZC' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/LZC.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'LZC' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/LZC.vhd:11]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'two_complement' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/two_complement.vhd:4' bound to instance 'zero_count_complementer' of component 'two_complement' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:91]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'decrement_exp' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:99]
+INFO: [Synth 8-3491] module 'barrel_shifter_left' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_left.vhd:5' bound to instance 'left_shifter' of component 'barrel_shifter_left' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'barrel_shifter_left' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_left.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'barrel_shifter_left' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/barrel_shifter_left.vhd:15]
+INFO: [Synth 8-3491] module 'rounder' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/rounder.vhd:4' bound to instance 'round_significand' of component 'rounder' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:122]
+INFO: [Synth 8-638] synthesizing module 'rounder' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/rounder.vhd:12]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'RCA_N' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:4' bound to instance 'adder_24' of component 'RCA_N' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/rounder.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'RCA_N__parameterized6' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+	Parameter N bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U0' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:30]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/FA.vhd:5' bound to instance 'U' of component 'FA' [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:33]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'RCA_N__parameterized6' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/RCA_N.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'rounder' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/rounder.vhd:12]
+	Parameter N bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'stage3' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/stage3.vhd:15]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'IEEE754_Adder' (0#1) [C:/Users/raula/Desktop/project_1/project_1.srcs/sources_1/new/IEEE754_Adder.vhd:16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1486.984 ; gain = 562.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1486.984 ; gain = 562.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1486.984 ; gain = 562.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1486.984 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/raula/Desktop/project_1/project_1.srcs/constrs_1/new/IEEE754_constraint.xdc]
+Finished Parsing XDC File [C:/Users/raula/Desktop/project_1/project_1.srcs/constrs_1/new/IEEE754_constraint.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1586.121 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 202   
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 3     
+	               29 Bit    Registers := 2     
+	               27 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   2 Input   29 Bit        Muxes := 2     
+	   2 Input   28 Bit        Muxes := 25    
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:37 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:44 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |    31|
+|3     |LUT3 |    95|
+|4     |LUT4 |    77|
+|5     |LUT5 |   163|
+|6     |LUT6 |   280|
+|7     |FDRE |   198|
+|8     |IBUF |    67|
+|9     |OBUF |    32|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1586.121 ; gain = 562.836
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 1586.121 ; gain = 661.973
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1586.121 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bf477672
+INFO: [Common 17-83] Releasing license: Synthesis
+168 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 1586.121 ; gain = 1062.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1586.121 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/raula/Desktop/project_1/project_1.runs/synth_1/IEEE754_Adder.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file IEEE754_Adder_utilization_synth.rpt -pb IEEE754_Adder_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 11:10:21 2024...

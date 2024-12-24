@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raula/Desktop/project_1/project_1.sim/sim_1/impl/timing/xsim/TB_IEEE754_Adder_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IEEE754_Adder
+INFO: [VRFC 10-311] analyzing module flipflopD
+INFO: [VRFC 10-311] analyzing module flipflopD_2
+INFO: [VRFC 10-311] analyzing module flipflopD_3
+INFO: [VRFC 10-311] analyzing module flipflopD_4
+INFO: [VRFC 10-311] analyzing module flipflopD_5
+INFO: [VRFC 10-311] analyzing module flipflopD_6
+INFO: [VRFC 10-311] analyzing module flipflopD_vector
+INFO: [VRFC 10-311] analyzing module flipflopD_vector_0
+INFO: [VRFC 10-311] analyzing module flipflopD_vector_7
+INFO: [VRFC 10-311] analyzing module flipflopD_vector__parameterized2
+INFO: [VRFC 10-311] analyzing module flipflopD_vector__parameterized2_1
+INFO: [VRFC 10-311] analyzing module flipflopD_vector__parameterized4
+INFO: [VRFC 10-311] analyzing module flipflopD_vector__parameterized4_8
+INFO: [VRFC 10-311] analyzing module flipflopD_vector__parameterized6
+INFO: [VRFC 10-311] analyzing module glbl
